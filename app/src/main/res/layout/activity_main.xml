@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+
+<!--One-->
+    <Button
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:elevation="10dp"
+        android:text="Normal Click"
+        android:background="@drawable/ripple_effect_one"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+
+        />
+
+    <!--Two-->
+    <FrameLayout
+        android:id="@+id/Two"
+        android:layout_below="@id/one"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:focusable="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ripple_effect_two"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Wave ripple effect"
+            android:textSize="17sp"
+            android:textAllCaps="false"
+            android:textColor="#fff"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:theme="@style/WhiteRippleEffect"
+            />
+
+    </FrameLayout>
+
+
+    <!--Three-->
+    <Button
+        android:id="@+id/Three"
+        android:layout_below="@id/Two"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        android:elevation="10dp"
+        android:text="Gradient Button Click"
+        android:background="@drawable/ripple_effect_three"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="17sp"
+        />
+
+    <!--Four-->
+    <FrameLayout
+        android:id="@+id/Four"
+        android:layout_below="@id/Three"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ripple_effect_four"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Circle Ripple"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:layout_gravity="center"/>
+
+
+        </FrameLayout>
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>
